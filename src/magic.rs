@@ -383,7 +383,8 @@ const MAGIC_XML: &'static [Magic] = &[Magic::String("application/xhtml+xml",
                                                     "<html xmlns=\"http://www.w3.\
                                                      org/1999/xhtml\""),
                                       Magic::String("application/atom+xml", "<feed"),
-                                      Magic::String("application/rss+xml", "<rss")];
+                                      Magic::String("application/rss+xml", "<rss"),
+                                      Magic::String("application/rss+xml", "<rdf")];
 
 // Returns true and sets result if the content appears to contain XHTML or a feed.
 // Clears have_enough_content if more data could possibly change the result.
